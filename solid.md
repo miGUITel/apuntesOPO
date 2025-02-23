@@ -1,6 +1,8 @@
 Los principios **SOLID** son cinco reglas fundamentales en la programación orientada a objetos que ayudan a escribir código más **mantenible, flexible y escalable**.
 Fueron formulados por **Robert C. Martin (Uncle Bob)** y buscan mejorar el diseño del software, facilitando su evolución sin introducir errores innecesarios.
 
+[VÍDEO](https://www.youtube.com/watch?v=2X50sKeBAcQ)
+
 Cada letra de **SOLID** representa un principio:
 
 1. **S** - **Single Responsibility [Principle](./s.md) (SRP)** → Una clase debe tener **una única razón para cambiar**.
