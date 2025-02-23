@@ -17,3 +17,46 @@ En consecuencia:
 - **C++**: `Persona p3 = p1;` → se crea un **nuevo** objeto `p3` copiando los miembros de `p1` (salvo que `Persona` sea un puntero o referencia).  
 
 Esto también explica por qué en Java se habla de referencias y en C++ de objetos reales en memoria (o punteros si así se declara). Por tanto, hay que tener cuidado en C++ con las copias superficiales vs. copias profundas y en Java con saber que dos variables pueden estar señalando a la misma instancia.
+
+### Ejemplo en c++: copia superficial
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Persona {
+public:
+    std::string nombre;
+
+    Persona(std::string nombre) : nombre(nombre) {}
+};
+
+Persona p1("Alice");
+Persona p2("Alice");
+Persona p3 = p1; // COPIA SUPERFICIAL (nuevo objeto)
+
+if (p1 == p2) {
+    std::cout << "p1 y p2 son iguales en contenido.\n"; // ✅ Debería imprimirse
+}
+
+if (&p1 == &p3) {
+    std::cout << "p1 y p3 son el mismo objeto (idénticos).\n"; // ❌ NO se imprime
+}
+
+```
+
+### Ejemplo en Java: copia de la referencia
+
+```java
+Persona p1 = new Persona("Alice");
+Persona p2 = new Persona("Alice");
+Persona p3 = p1; // NO es una copia, p3 referencia a p1
+if (p1.equals(p2)) {
+    System.out.println("p1 y p2 son iguales en contenido."); // ✅ Se imprime
+}
+
+if (p1 == p3) {
+    System.out.println("p1 y p3 son el mismo objeto (idénticos)."); // ✅ Se imprime
+}
+
+```
