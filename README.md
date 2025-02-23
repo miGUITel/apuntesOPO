@@ -7,3 +7,5 @@
 [mutabilidad en java](./mutJava.md)
 
 [referencias y copia superficial java y c++](./ref&copy.md)
+
+[constructor por defecto: por qué reescribirlo](./constDefecto.md)
