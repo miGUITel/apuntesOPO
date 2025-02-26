@@ -1,11 +1,3 @@
-[introducción a python](./introPY.md)
+[POO](./POO_general/README.md)
 
-[SOLID](./solid.md)
-
-[mutabilidad general](./mutable.md)
-
-[mutabilidad en java](./mutJava.md)
-
-[referencias y copia superficial java y c++](./ref&copy.md)
-
-[constructor por defecto: por qué reescribirlo](./constDefecto.md)
+[PY](./python/index.md)
