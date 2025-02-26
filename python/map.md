@@ -1,6 +1,16 @@
 ### **📌 `map()` en Python**  
 La función `map()` **aplica una función a cada elemento de un iterable** (lista, tupla, conjunto, etc.) y devuelve un **iterador** con los resultados.
 
+**El map se declara pero no se ejecuta hasta que es necesario**: por ejemplo, cuado queremos imprimir la lista.
+
+> mi ejemplo:
+```py
+temp1 = [33, 41]
+def farenh(x):
+    return 2 * x
+temp2 = list(map(lambda x: x +11, temp1))
+print(temp2)
+```
 ---
 
 ## **🔹 Sintaxis básica**

@@ -7,3 +7,5 @@
 [generando listas: comprenhesion](./generaListas.md)
 
 [generando listas: map](./map.md) [libro](https://ellibrodepython.com/programacion-funcional-python#map-en-python)
+
+[pathlib](./pathlib/pathIndex.md)
