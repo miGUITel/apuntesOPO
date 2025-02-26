@@ -25,3 +25,4 @@ numeros = [5, 12, 3, 20, 8, 15]
 mayores_10 = filter(lambda x: x if x > 10 else None, numeros)# Tu código aquí
 print(list(mayores_10))  # Debe imprimir: [12, 20, 15]
 ```
+

@@ -10,4 +10,8 @@
 
 [generando listas: map](./map.md) [libro](https://ellibrodepython.com/programacion-funcional-python#map-en-python)
 
+[reduce](./reduce.md)
+
+[slicing](./slicing.md)
+
 [pathlib](./pathlib/pathIndex.md)
