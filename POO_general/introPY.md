@@ -66,6 +66,7 @@ Los métodos en Python se definen con `def` y siempre llevan `self` como primer 
 ### **Tipos de Métodos**
 1. **Método de instancia (los más comunes)**  
    - Acceden a los atributos del objeto y los modifican.
+   
    ```python
    class Auto:
        def __init__(self, marca):
@@ -80,6 +81,7 @@ Los métodos en Python se definen con `def` y siempre llevan `self` como primer 
 
 2. **Método de clase (`@classmethod`)**  
    - Se usa `cls` en lugar de `self` y actúa sobre atributos de la clase.
+   
    ```python
    class Auto:
        total_autos = 0  # Atributo de clase
@@ -99,6 +101,7 @@ Los métodos en Python se definen con `def` y siempre llevan `self` como primer 
 
 3. **Método estático (`@staticmethod`)**  
    - No recibe `self` ni `cls`, es como un método `static` en Java.
+   
    ```python
    class Calculadora:
        @staticmethod
